@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Connects the SQLAlchemy library to the database.
-engine = create_engine('postgresql+psycopg://postgres:jhemison@localhost:5432/dentist_clinic')
+engine = create_engine('postgresql+psycopg://?????:????@localhost:5432/dentist_clinic')
 
 # By default, it creates 5 connection pools.
 session_local = sessionmaker(bind = engine, autoflush = False, autocommit = False)
